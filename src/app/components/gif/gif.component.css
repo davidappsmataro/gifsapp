@@ -1,0 +1,42 @@
+.gif {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 60cqh;
+  width: 100cqw;
+  padding: 10px;
+  container-type: inline-size;
+}
+.gif__image {
+  max-width: 80cqw;
+}
+.gif__button {
+  margin: 2rem 0;
+}
+.gif__title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 10px;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.gif__username {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 2rem;
+  text-align: center;
+}
+.gif__accordion {
+  width: 80cqw;
+  margin-top: 2rem;
+}
+@container (min-width: 998px) {
+  .gif__button {
+    align-self: flex-end;
+    margin-right: 3rem;
+  }
+  .gif__accordion {
+    width: 60cqw;
+  }
+}

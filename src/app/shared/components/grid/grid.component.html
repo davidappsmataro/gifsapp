@@ -1,0 +1,37 @@
+<table
+  mat-table
+  [dataSource]="gifs"
+  class="mat-elevation-z8"
+  *ngIf="gifs && gifs.length > 0"
+>
+  <ng-container matColumnDef="image">
+    <th mat-header-cell *matHeaderCellDef>Gif</th>
+    <td mat-cell *matCellDef="let gif">
+      <img
+        [src]="gif.images.fixed_height.url"
+        [alt]="gif.title"
+        width="100"
+        class="table__image"
+      />
+    </td>
+  </ng-container>
+
+  <ng-container matColumnDef="title">
+    <th mat-header-cell *matHeaderCellDef>Título</th>
+    <td mat-cell *matCellDef="let gif">{{ gif.title }}</td>
+  </ng-container>
+
+  <ng-container matColumnDef="username">
+    <th mat-header-cell *matHeaderCellDef>Usuario</th>
+    <td mat-cell *matCellDef="let gif">{{ gif.username }}</td>
+  </ng-container>
+
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+
+  <tr
+    mat-row
+    *matRowDef="let row; columns: displayedColumns"
+    [routerLink]="['/gif', row.id]"
+    class="table__row"
+  ></tr>
+</table>

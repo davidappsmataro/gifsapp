@@ -1,0 +1,10 @@
+.card {
+  /* width: 200px; */
+  max-width: 350px;
+}
+.card-title {
+  font-size: 1.2em;
+  line-height: 1.4rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}

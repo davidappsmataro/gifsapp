@@ -1,0 +1,48 @@
+.gif-list__container {
+  width: 80cqw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin: 0 auto;
+  container-type: inline-size;
+}
+
+.gif-list__card,
+.gif-list__grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 90cqw;
+  margin-top: 5rem;
+}
+
+.gif-list__form-field {
+  margin-top: 3rem;
+  width: 100cqw;
+}
+.gif-list__chips {
+  margin-top: 2rem;
+}
+.gif-list__buttons {
+  width: 100cqw;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 10px;
+  margin-top: 2rem;
+}
+.error-gifs {
+  color: red;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+@container (min-width: 1200px) {
+  .gif-list__list {
+    width: 100%;
+  }
+}

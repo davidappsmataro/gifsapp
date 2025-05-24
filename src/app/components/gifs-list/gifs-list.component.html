@@ -1,0 +1,64 @@
+<!-- (click)="buscarCategoria(category)" -->
+<div class="gif-list__container">
+  <mat-chip-listbox class="gif-list__chips" aria-label="Fish selection">
+    <mat-chip-option
+      *ngFor="let category of categories"
+      [selected]="categorySelected === category"
+      (selectionChange)="buscarCategoria(category, $event.selected)"
+      >{{ category }}</mat-chip-option
+    >
+  </mat-chip-listbox>
+  <mat-form-field class="gif-list__form-field">
+    <mat-label>Buscar Gifs...</mat-label>
+    <input matInput type="text" [formControl]="searchControl" />
+    <button
+      *ngIf="searchControl.value"
+      matSuffix
+      mat-icon-button
+      aria-label="Clear"
+      (click)="searchControl.setValue('')"
+    >
+      <mat-icon>close</mat-icon>
+    </button>
+  </mat-form-field>
+
+  <div class="gif-list__buttons">
+    <button
+      [ngStyle]="
+        view === 'card'
+          ? { backgroundColor: 'grey', color: 'white' }
+          : { backgroundColor: 'transparent' }
+      "
+      mat-icon-button
+      aria-label="gifs on list view"
+      (click)="view = 'card'"
+    >
+      <mat-icon>list</mat-icon>
+    </button>
+    <button
+      [ngStyle]="
+        view === 'list'
+          ? { backgroundColor: 'grey', color: 'white' }
+          : { backgroundColor: 'transparent' }
+      "
+      mat-icon-button
+      aria-label="gis on grid view"
+      (click)="view = 'list'"
+    >
+      <mat-icon>grid_view</mat-icon>
+    </button>
+  </div>
+  <div *ngIf="!(isLoading$ | async)">
+    <div *ngIf="view === 'card'" class="gif-list__card">
+      <a *ngFor="let gif of gifsList" [routerLink]="['/gif', gif.id]">
+        <app-card [gif]="gif" @fadeIn></app-card>
+      </a>
+    </div>
+    <div *ngIf="view === 'list'" class="gif-list__grid">
+      <app-grid [gifs]="gifsList" @fadeIn></app-grid>
+    </div>
+  </div>
+  <div *ngIf="errorMessage" class="error-gifs">
+    {{ errorMessage }}
+  </div>
+</div>

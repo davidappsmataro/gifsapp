@@ -1,0 +1,46 @@
+<div class="gif">
+  <button mat-fab extended color="primary" class="gif__button" routerLink="/">
+    <mat-icon>arrow_back</mat-icon>
+    Back
+  </button>
+  <h1 class="gif__title">{{ gif?.title }}</h1>
+  <img
+    [src]="gif?.images?.original?.url"
+    alt="{{ gif?.title }}"
+    class="gif__image"
+  />
+
+  <div class="gif__username">
+    <p>{{ gif?.username }}</p>
+  </div>
+  <mat-accordion
+    class="gif__accordion"
+    [ngStyle]="panelOpenState ? { 'margin-bottom': '2rem' } : {}"
+  >
+    <mat-expansion-panel
+      (opened)="panelOpenState = true"
+      (closed)="panelOpenState = false"
+    >
+      <mat-expansion-panel-header>
+        <mat-panel-title> + detalle </mat-panel-title>
+        <mat-panel-description>
+          Mostrar más detalles del gif
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+      <div>
+        <p><b>Id:</b> {{ gif?.id }}</p>
+        <p><b>Tipo:</b> {{ gif?.type }}</p>
+        <p><b>URL:</b> {{ gif?.url }}</p>
+        <p><b>Width:</b> {{ gif?.images?.original?.width }}</p>
+        <p><b>Height:</b> {{ gif?.images?.original?.height }}</p>
+        <p><b>Size:</b> {{ gif?.images?.original?.size }}</p>
+        <p><b>Frames:</b> {{ gif?.images?.original?.frames }}</p>
+        <p><b>Hash:</b> {{ gif?.images?.original?.hash }}</p>
+        <p><b>Mp4:</b> {{ gif?.images?.original?.mp4 }}</p>
+        <p><b>Mp4 Size</b>: {{ gif?.images?.original?.mp4_size }}</p>
+        <p><b>Webp:</b> {{ gif?.images?.original?.webp }}</p>
+        <p><b>Webp Size</b>: {{ gif?.images?.original?.webp_size }}</p>
+      </div>
+    </mat-expansion-panel>
+  </mat-accordion>
+</div>
