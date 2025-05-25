@@ -1,0 +1,140 @@
+{
+  "configVersion": 1,
+  "timestamp": 1748151338620,
+  "index": "/gifsapp/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/gifsapp/favicon.ico",
+        "/gifsapp/index.html",
+        "/gifsapp/main.d0178b7a830d14df.js",
+        "/gifsapp/manifest.webmanifest",
+        "/gifsapp/polyfills.1b7fea977440760d.js",
+        "/gifsapp/runtime.84a3fc6feda124fe.js",
+        "/gifsapp/styles.9bd4b668c14b3369.css"
+      ],
+      "patterns": [
+        "https:\\/\\/fonts\\.googleapis\\.com\\/icon\\?family=Material\\+Icons"
+      ]
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/gifsapp/assets/icons/icon-128x128.png",
+        "/gifsapp/assets/icons/icon-144x144.png",
+        "/gifsapp/assets/icons/icon-152x152.png",
+        "/gifsapp/assets/icons/icon-192x192.png",
+        "/gifsapp/assets/icons/icon-384x384.png",
+        "/gifsapp/assets/icons/icon-512x512.png",
+        "/gifsapp/assets/icons/icon-72x72.png",
+        "/gifsapp/assets/icons/icon-96x96.png",
+        "/gifsapp/assets/icons/maskable_icon_x128.png",
+        "/gifsapp/assets/icons/maskable_icon_x144.png",
+        "/gifsapp/assets/icons/maskable_icon_x152.png",
+        "/gifsapp/assets/icons/maskable_icon_x192.png",
+        "/gifsapp/assets/icons/maskable_icon_x384.png",
+        "/gifsapp/assets/icons/maskable_icon_x48.png",
+        "/gifsapp/assets/icons/maskable_icon_x512.png",
+        "/gifsapp/assets/icons/maskable_icon_x72.png",
+        "/gifsapp/assets/icons/maskable_icon_x96.png"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [
+    {
+      "name": "giphy-api",
+      "patterns": [
+        "https:\\/\\/api\\.giphy\\.com\\/v1\\/gifs\\/.*"
+      ],
+      "strategy": "freshness",
+      "maxSize": 25,
+      "maxAge": 3600000,
+      "timeoutMs": 1000,
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "version": 1
+    },
+    {
+      "name": "giphy-images",
+      "patterns": [
+        "https:\\/\\/media\\.giphy\\.com\\/media\\/.*",
+        "https:\\/\\/media0\\.giphy\\.com\\/media\\/.*",
+        "https:\\/\\/media1\\.giphy\\.com\\/media\\/.*",
+        "https:\\/\\/media2\\.giphy\\.com\\/media\\/.*",
+        "https:\\/\\/media3\\.giphy\\.com\\/media\\/.*",
+        "https:\\/\\/media4\\.giphy\\.com\\/media\\/.*",
+        "https:\\/\\/media5\\.giphy\\.com\\/media\\/.*",
+        "https:\\/\\/media6\\.giphy\\.com\\/media\\/.*",
+        "https:\\/\\/media7\\.giphy\\.com\\/media\\/.*",
+        "https:\\/\\/media8\\.giphy\\.com\\/media\\/.*",
+        "https:\\/\\/media9\\.giphy\\.com\\/media\\/.*"
+      ],
+      "strategy": "freshness",
+      "maxSize": 10,
+      "maxAge": 3600000,
+      "timeoutMs": 1000,
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "version": 1
+    }
+  ],
+  "hashTable": {
+    "/gifsapp/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
+    "/gifsapp/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
+    "/gifsapp/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
+    "/gifsapp/assets/icons/icon-192x192.png": "1abd80d431a237a853ce38147d8c63752f10933b",
+    "/gifsapp/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
+    "/gifsapp/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
+    "/gifsapp/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
+    "/gifsapp/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
+    "/gifsapp/assets/icons/maskable_icon_x128.png": "378b78169bc7d74178839b0f3a272bab6351f532",
+    "/gifsapp/assets/icons/maskable_icon_x144.png": "dfdb700a78a09318b33347d74f3f355375881b91",
+    "/gifsapp/assets/icons/maskable_icon_x152.png": "4cc2b1372c59c49a4a167eb96e22d82baafcc7ab",
+    "/gifsapp/assets/icons/maskable_icon_x192.png": "68b6a0e1d14efe4d5e29a5228c9e5f731a8ba264",
+    "/gifsapp/assets/icons/maskable_icon_x384.png": "2a3e75c378398f67fce800e8e10c4edfbc01c4e4",
+    "/gifsapp/assets/icons/maskable_icon_x48.png": "be86e3df2329cbcc9c347fd97c4f6432114f6c2d",
+    "/gifsapp/assets/icons/maskable_icon_x512.png": "bf4dce720aeeaf4fc132f7bca4fc9c94f59e4f87",
+    "/gifsapp/assets/icons/maskable_icon_x72.png": "f5b8ad8575071892a407e7509efc316b81b198e8",
+    "/gifsapp/assets/icons/maskable_icon_x96.png": "f9ed4cf7ee2df4f9103528c31a63b02171a3f603",
+    "/gifsapp/favicon.ico": "d6f4f9ba6c3b72ff53b14a681af3db6ec133e4a3",
+    "/gifsapp/index.html": "a8c2d2c101ce995933be08db6c113ca359f0a6eb",
+    "/gifsapp/main.d0178b7a830d14df.js": "a82e7857fb0709249dd790e808871d091451e9ab",
+    "/gifsapp/manifest.webmanifest": "ce20a599f60991539fe4140f0684ec53ed56b7d9",
+    "/gifsapp/polyfills.1b7fea977440760d.js": "d5e42607e0f1882687c7c40e10e298fe32880ea5",
+    "/gifsapp/runtime.84a3fc6feda124fe.js": "9ae1d3f1dc98348ee6eacf7e8d6bc1bdff956acb",
+    "/gifsapp/styles.9bd4b668c14b3369.css": "2c623b5954914c75149ca445cc18c26942926dec"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ],
+  "navigationRequestStrategy": "performance"
+}
