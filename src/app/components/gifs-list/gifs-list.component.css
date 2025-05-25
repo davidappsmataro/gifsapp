@@ -30,7 +30,7 @@
 .gif-list__buttons {
   width: 100cqw;
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   align-items: center;
   gap: 10px;
   margin-top: 2rem;

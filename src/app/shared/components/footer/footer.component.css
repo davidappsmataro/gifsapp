@@ -1,10 +1,18 @@
 .footer {
   width: 100%;
+  min-height: 150px;
   text-align: center;
   font-size: 1rem;
   padding: 1rem 0;
-  margin-top: auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.footer__logo {
+.footer__author {
+}
+.footer__giphy {
+  margin-top: 1rem !important;
 }
