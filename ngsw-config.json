@@ -1,0 +1,66 @@
+{
+  "$schema": "./node_modules/@angular/service-worker/config/schema.json",
+  "index": "/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "resources": {
+        "files": [
+          "/favicon.ico",
+          "/index.html",
+          "/manifest.webmanifest",
+          "/*.css",
+          "/*.js"
+        ],
+        "urls": ["https://fonts.googleapis.com/icon?family=Material+Icons"]
+      }
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "resources": {
+        "files": [
+          "/assets/**",
+          "/*.(svg|cur|jpg|jpeg|png|apng|webp|avif|gif|otf|ttf|woff|woff2)"
+        ]
+      }
+    }
+  ],
+  "dataGroups": [
+    {
+      "name": "giphy-api",
+      "urls": ["https://api.giphy.com/v1/gifs/**"],
+      "cacheConfig": {
+        "maxSize": 25,
+        "maxAge": "1h",
+        "timeout": "1s",
+        "strategy": "freshness"
+      }
+    },
+    {
+      "name": "giphy-images",
+      "urls": [
+        
+        "https://media.giphy.com/media/**",
+        "https://media0.giphy.com/media/**",
+        "https://media1.giphy.com/media/**",
+        "https://media2.giphy.com/media/**",
+        "https://media3.giphy.com/media/**",
+        "https://media4.giphy.com/media/**",
+        "https://media5.giphy.com/media/**",
+        "https://media6.giphy.com/media/**",
+        "https://media7.giphy.com/media/**",
+        "https://media8.giphy.com/media/**",
+        "https://media9.giphy.com/media/**"
+      ],
+      "cacheConfig": {
+        "maxSize": 10,
+        "maxAge": "1h",
+        "timeout": "1s",
+        "strategy": "freshness"
+      }
+    }
+  ]
+}
