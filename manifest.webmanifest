@@ -1,7 +1,7 @@
 {
   "name": "gifsapp",
   "short_name": "gifsapp",
-  "theme_color": "#1976d2",
+  "theme_color": "#3645a9",
   "background_color": "#fafafa",
   "display": "standalone",
   "scope": "./",
