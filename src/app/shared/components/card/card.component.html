@@ -3,7 +3,11 @@
     <mat-card-title class="card-title">{{ gif.title }}</mat-card-title>
     <!-- <mat-card-subtitle>{{ post.subtitle }}</mat-card-subtitle> -->
   </mat-card-header>
-  <img mat-card-image src="{{ gif.images.original.url }}" alt="Post image" />
+  <img
+    mat-card-image
+    src="{{ gif.images.fixed_height.url }}"
+    alt="Post image"
+  />
 
   <mat-card-content class="card-content">
     <p class="card-content-descrip">{{ gif.user?.username }}</p>

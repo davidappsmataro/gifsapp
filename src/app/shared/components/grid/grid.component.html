@@ -1,7 +1,7 @@
 <table
   mat-table
   [dataSource]="gifs"
-  class="mat-elevation-z8"
+  class="mat-elevation-z8 table"
   *ngIf="gifs && gifs.length > 0"
 >
   <ng-container matColumnDef="image">
@@ -21,10 +21,10 @@
     <td mat-cell *matCellDef="let gif">{{ gif.title }}</td>
   </ng-container>
 
-  <ng-container matColumnDef="username">
+  <!--  <ng-container matColumnDef="username">
     <th mat-header-cell *matHeaderCellDef>Usuario</th>
     <td mat-cell *matCellDef="let gif">{{ gif.username }}</td>
-  </ng-container>
+  </ng-container> -->
 
   <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
 

@@ -1,3 +1,7 @@
+.table {
+  width: 80cqw;
+  overflow-x: auto;
+}
 .table__row {
   cursor: pointer;
   transition: 0.3s ease;
