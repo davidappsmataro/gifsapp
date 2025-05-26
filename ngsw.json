@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1748271408301,
+  "timestamp": 1748272488025,
   "index": "/gifsapp/index.html",
   "assetGroups": [
     {
@@ -13,7 +13,7 @@
       "urls": [
         "/gifsapp/favicon.ico",
         "/gifsapp/index.html",
-        "/gifsapp/main.c8d3d3e3dcd8b2a7.js",
+        "/gifsapp/main.0550ee97f479e4c2.js",
         "/gifsapp/manifest.webmanifest",
         "/gifsapp/polyfills.1b7fea977440760d.js",
         "/gifsapp/runtime.84a3fc6feda124fe.js",
@@ -113,8 +113,8 @@
     "/gifsapp/assets/icons/maskable_icon_x72.png": "f5b8ad8575071892a407e7509efc316b81b198e8",
     "/gifsapp/assets/icons/maskable_icon_x96.png": "f9ed4cf7ee2df4f9103528c31a63b02171a3f603",
     "/gifsapp/favicon.ico": "d6f4f9ba6c3b72ff53b14a681af3db6ec133e4a3",
-    "/gifsapp/index.html": "f736f9c068bc19eff2c0baf3f069a27535de7f2f",
-    "/gifsapp/main.c8d3d3e3dcd8b2a7.js": "c999ab8049cda9526f6a74778176f1f960d00526",
+    "/gifsapp/index.html": "1e8471da1e36ca20c9fc512b173f38af00fc4d91",
+    "/gifsapp/main.0550ee97f479e4c2.js": "0bab9130e2f2ddb53fc5d2d10b2ccf82825614cc",
     "/gifsapp/manifest.webmanifest": "bfa9db66e817f6cd9a53169b23a94bafd8c728ea",
     "/gifsapp/polyfills.1b7fea977440760d.js": "d5e42607e0f1882687c7c40e10e298fe32880ea5",
     "/gifsapp/runtime.84a3fc6feda124fe.js": "9ae1d3f1dc98348ee6eacf7e8d6bc1bdff956acb",
