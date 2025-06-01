@@ -8,3 +8,6 @@
   margin-bottom: 1rem;
   text-align: center;
 }
+.card__image {
+  max-width: 100%;
+}
